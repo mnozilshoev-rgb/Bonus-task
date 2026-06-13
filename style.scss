@@ -2,7 +2,7 @@
     margin: 0;
 }
 $p: grey;
-$maxwidth: 1100px;
+$maxwidth: 1050px;
 
 @mixin divstyle{
     max-width: $maxwidth;
@@ -44,6 +44,127 @@ $maxwidth: 1100px;
         
     
     }
+    .section1{
+        @include divstyle;
+        height: 500px;
+        margin-top: 100px;
+        display: flex;
+        gap: 10%;
+        .left1{
+            display: flex;
+            flex-direction: column;
+            width: 38%;
+            justify-content: center;
+            gap: 20px;
+
+            h1{
+                font-size: 50px;
+                color: #8BAC3E;
+            }
+            p{
+                color: $p;
+                font-size: 18px;
+            }
+
+        }
+        .btn2{
+        width: 140px;
+        padding: 10px 20px;
+        background-color: #8BAC3E;
+        color: white;
+        border-radius: 30px;
+        border: none;
+    }
+    .btn1{
+        
+        width: 140px;
+        padding: 10px 20px;
+        background-color: #F2F2F2;
+        border-radius: 30px;
+        border: none;
+    }
+    }
+
+     .section2{
+        @include divstyle;
+        max-width: $maxwidth;
+        height: 300px;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+        .top{
+            h1{
+                color: black;
+                font-size: 37px;
+            }
+            h2{
+                color: #8BAC3E;
+                font-size: 35px;
+            }
+        }
+        .bottom{
+            width: 100%;
+            height: 200px;
+            margin-top: 50px;
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+          
+
+
+            .box{
+                width: 18%;
+                height: 160px;
+                background: red;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                h3{
+                    margin-top: 20px;
+                    margin-bottom: 10px;
+                }
+                p{
+                    color: gray;
+                }
+            }
+            .box1{
+                background-color: #F0FEEB;
+            }
+            .box2{
+                background-color: #E4F2F4;
+                height: 180px;
+            }
+            .box3{
+                background-color: #EAEEFA;
+            }
+            .box4{
+                background-color: #F9EEF3;
+            }
+            .box5{
+                background-color: #F3F7D9;
+            }
+        }
+        .bottom1{
+            display: flex;
+            justify-content: end;
+            gap: 10px
+            ;
+            
+            button{
+                padding: 10px 15px;
+                background-color: #8BAC3E;
+                color: white;
+                border-radius: 40px;
+                border: none;
+                
+            }
+        }
+
+
+     }
+
 
 
 
@@ -60,6 +181,53 @@ $maxwidth: 1100px;
         padding: 13px;
 
     }
+
+    .section1{
+         @include divstyle;
+        height: auto;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        padding: 10px;
+
+        .left1{
+            display: flex;
+            flex-direction: column;
+            width: 90%;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+        }
+        .btn1{
+        display: inline !important;
+    }
+
+
+    }
+
+    .box1{
+        display: none !important;
+    }
+    .box2{
+        display: none !important;
+    }
+    
+    .box3{
+        width: 45% !important;
+
+    }
+    .box4{
+        width: 45% !important;
+
+    }
+    .box5{
+        display: none !important;
+    }
+    .section2{
+        padding: 10px;
+    }
+
+
 
 
   }
