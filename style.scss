@@ -1,3 +1,69 @@
 *{
     margin: 0;
 }
+$p: grey;
+$maxwidth: 1100px;
+
+@mixin divstyle{
+    max-width: $maxwidth;
+    margin: auto;
+
+}
+
+
+.mainheader{
+    @include divstyle;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+
+    .nav{
+        display: flex;
+        gap: 20px;
+        color: grey;
+    }
+    .btn2{
+        width: 140px;
+        padding: 10px 20px;
+        background-color: #8BAC3E;
+        color: white;
+        border-radius: 30px;
+        border: none;
+    }
+    .btn1{
+        
+        width: 140px;
+        padding: 10px 20px;
+        background-color: transparent;
+        border-radius: 30px;
+        border: none;
+    }
+   
+        
+    
+    }
+
+
+
+
+
+
+  @media (max-width: 510px) {
+    .nav{display: none !important; 
+    }
+    .btn1{
+        display: none !important;
+    }
+    .mainheader  {
+        padding: 13px;
+
+    }
+
+
+  }
+
+
+    
+
